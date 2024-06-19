@@ -1,0 +1,126 @@
+.Studentslist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.Studentslist h2 {
+    margin: 30px 50px;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1A3CB8;
+}
+
+.Studentslist input {
+    padding: 10px;
+    border: 1px solid #76AAF7;
+    border-radius: 4px;
+    width: 400px;
+    font-size: 13px;
+    margin-right: 40px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #76AAF7;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1.5px solid #8aa2fb;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight:300;
+}
+
+thead {
+    border-bottom: 1.5px solid #76AAF7;
+}
+
+thead th {
+    background-color: #b3cff8;
+    text-align: center;
+    padding: 10px;
+}
+
+thead th.serial-number {
+    width: 50px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ebf0f7;
+}
+
+tbody td.serial-number {
+    width: 10px;
+}
+
+.serial-number{
+    width: 1%;
+}
+
+.student-name{
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+    .Studentslist h2 {
+        margin: 8px 20px;
+        font-size: 20px;
+        padding: 10px;
+    }
+        .Studentslist {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    
+        .Studentslist input {
+            width: 80%;
+            margin: 8px 20px;
+        }
+    
+        .search-input {
+            margin-right: 0;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+    
+        table {
+            width: 90%;
+        }
+    
+        th,
+        td {
+            padding: 8px;
+            font-size: 8px;
+        }
+    
+        
+}

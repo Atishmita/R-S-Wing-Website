@@ -1,0 +1,162 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.heading {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 700px;
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+input[type=text],
+input[type=password],
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+button {
+    background-color: #2196F3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    display: block;
+    text-align: left;
+}
+
+.internButtons {
+    display: flex;
+    padding: 10px 25px;
+    margin: 20px;
+    transition: 0.3s all ease-out;
+    justify-content: center;
+}
+
+.button1,
+.button2 {
+    margin-right: 30px;
+    box-shadow: 0px 5px 5px 2px #d7d6d6;
+}
+
+.button2 {
+    background-color: transparent;
+    color: #2196f3;
+    border: 2px solid #2196f3;
+}
+
+.button3 {
+    background-color: transparent;
+    color: #2196f3;
+    border: 2px solid #2196f3;
+    width: 100%;
+    padding: 10px;
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1;
+    max-height: 200px;
+    width: 100%;
+    overflow-y: auto;
+    top: 40px;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content ul li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .internButtons {
+        flex-direction: column;
+    }
+
+    .internButtons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .dropdown-content {
+        top: 50px;
+        left: 0;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,49 @@
+.employee-management-container {
+    padding: 20px;
+}
+
+.employee-add-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.employee-add-header h1 {
+    margin: 0;
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 30px;
+    color: #1A3CB8;
+}
+
+.add-card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dadbdc;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.employee-cards{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .employee-add-header h1{
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    .employee-cards{
+        margin-left: 10px;
+    }
+}
